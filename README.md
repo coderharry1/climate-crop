@@ -43,3 +43,72 @@ And identify the **most predictive features** influencing agricultural productiv
 4. Clean      → Remove missing/null entries
 5. Transform  → Convert kg/ha to tonnes/ha
 6. Export     → Cleaned_FAOSTAT_Yield.csv
+```
+
+---
+
+# 🤖 Modeling Approach
+
+We evaluated multiple ML models for yield prediction:
+
+- **Linear Regression** (baseline)
+- **Random Forest Regressor (tuned)** ✅ Best performance
+- **Gradient Boosting Regressor (tuned)**
+
+**Training Strategy**:
+- Standardized features  
+- GridSearchCV for hyperparameter tuning  
+- 5-fold cross-validation
+
+---
+
+# 📊 Evaluation Metrics
+
+| Model                     | RMSE (Val) | R² (Val) |
+|--------------------------|------------|------------|
+| Linear Regression         | 5.72       | 0.80       |
+| Random Forest (Tuned)     | 1.47       | 0.99       |
+| Gradient Boosting (Tuned) | 2.84       | 0.95       |
+
+> 🔥 Random Forest showed **best generalization** with lowest RMSE and near-perfect R².
+
+---
+
+# 📈 Results & Visualizations
+
+### Key Findings:
+- **Rainfall** and **arable land** were top predictors of crop yield.
+- SHAP values and permutation importance confirmed consistent feature relevance across countries.
+
+### Sample Plot:
+![Feature Importance](figures/feature_importance.png)
+
+📁 All visualizations are available in the `figures/` directory.
+
+---
+
+# 🔀 Reproducibility
+
+## ✅ Requirements:
+- Python 3.9+
+- Libraries: `pandas`, `scikit-learn`, `matplotlib`, `seaborn`, `xgboost`, `shap`, `jupyter`
+
+## 🚀 Run Locally:
+```bash
+# Clone repo
+git clone https://github.com/yourusername/crop-yield-forecast.git
+cd crop-yield-forecast
+
+# Launch notebook
+jupyter notebook Final_Modeling_Pipeline.ipynb
+```
+
+---
+
+# 📬 Contact
+
+For questions, reach out to **S. Harish Krishnan**  
+📧 haricap273@gmail.com  
+🔗 [LinkedIn](https://linkedin.com/in/your-profile) | [Portfolio](https://yourportfolio.com)
+
+---
