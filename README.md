@@ -81,8 +81,8 @@ We evaluated multiple ML models for yield prediction:
 - SHAP values and permutation importance confirmed consistent feature relevance across countries.
 
 ### Sample Plot:
-![Feature Importance](<img width="905" height="546" alt="Screenshot 2025-08-17 at 9 20 29 PM" src="https://github.com/user-attachments/assets/d5598218-4192-44e4-b703-87d12470c91d" />
-)
+![Feature Importance](https://github.com/user-attachments/assets/d5598218-4192-44e4-b703-87d12470c91d)
+
 
 
 ---
