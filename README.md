@@ -83,7 +83,7 @@ We evaluated multiple ML models for yield prediction:
 ### Sample Plot:
 ![Feature Importance](https://github.com/user-attachments/assets/d5598218-4192-44e4-b703-87d12470c91d)
 
-
+![Climate Crop Forecast Preview](climate_crop_preview.gif)
 
 ---
 
